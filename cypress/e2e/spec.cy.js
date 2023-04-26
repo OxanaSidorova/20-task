@@ -24,7 +24,7 @@ it("select", () => {
    "queryDb",
    `SELECT FirstName FROM Students WHERE City ="Milan"`
   ).then ((result) => {
-    expect(result(0).FirstName).to.equal("Oxana");
+    expect(result[0].FirstName).to.equal("Oxana");
   });
 });
 it("add students task", ()=> {
